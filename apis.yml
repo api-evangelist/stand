@@ -1,7 +1,30 @@
 aid: stand
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/stand.png
 name: STAND+
-description: STAND+ is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  STAND+ is a Techstars-backed footwear company making biomechanically
+  engineered "energy-recovery" shoes for people who spend long hours standing
+  or walking - healthcare workers, frontline and workforce professionals,
+  athletes, and everyday movers. Its proprietary midsole is designed to
+  dissipate and disperse impact energy outward rather than returning it into
+  the joints, which the company markets for fatigue and pain reduction. The
+  product lineup includes the AntiGrav1, AntiGrav2, and AG3 recovery shoes, the
+  Gales Pro and Gales Frontline workforce and healthcare lines, and standalone
+  recovery insoles. STAND+ is APMA (American Podiatric Medical Association)
+  certified and HSA/FSA eligible through a Truemed partnership. This is a
+  direct-to-consumer e-commerce brand (standshoes.com) with no public developer
+  API, SDK, or integration surface at the time of enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/stand/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +34,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Footwear
+- Consumer Products
+- E-Commerce
+- Health
+- Wearables
+- Recovery
+- Retail
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/stand-domain-security.yml
 - type: Website
-  url: https://weargales.com/
+  url: https://www.standshoes.com/
+- type: Support
+  url: https://www.standshoes.com/pages/support
+- type: TermsOfService
+  url: https://www.standshoes.com/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.standshoes.com/policies/privacy-policy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
